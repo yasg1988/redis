@@ -1,0 +1,10 @@
+version: '1.0'
+
+services:
+  redis:
+    build: .
+    ports:
+      - "6379:6379"
+    env:
+      - REDIS_PASSWORD=sfef*f88wefl3HAF&
+    command: src/redis-server --requirepass sfef*f88wefl3HAF& --protected-mode no

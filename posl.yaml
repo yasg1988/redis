@@ -6,5 +6,6 @@ services:
     ports:
       - "6379:6379"
     env:
-      - REDIS_PASSWORD=sfef*f88wefl3HAF&
-    command: src/redis-server --requirepass sfef*f88wefl3HAF& --protected-mode no
+      - REDIS_PASSWORD=sfef*f88wef13HAF&
+    command: src/redis-server --requirepass "sfef*f88wef13HAF&" --protected-mode no --bind 0.0.0.0
+
